@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Dr. Matiur Rahman Chowdhury - Aesthetic Dermatologist | Dhaka</title>
+    <meta name="description" content="Learn about Dr. Matiur Rahman Chowdhury, Bangladesh's most experienced aesthetic dermatologist. Pioneer in aesthetic dermatology with international training.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .two-column-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin: 60px 0;
+        }
+        
+        .two-column-grid.reverse {
+            direction: rtl;
+        }
+        
+        .two-column-grid.reverse > * {
+            direction: ltr;
+        }
+        
+        .column-image {
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .column-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .column-text {
+            padding: 20px 0;
+        }
+        
+        .column-text h2 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .column-text p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .expertise-item {
+            padding: 30px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .expertise-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .expertise-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .expertise-icon i {
+            font-size: 28px;
+            color: white;
+        }
+        
+        .expertise-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .expertise-item p {
+            color: var(--text-color);
+            line-height: 1.7;
+            text-align: center;
+            width: 100%;
+        }
+        
+        @media (max-width: 992px) {
+            .two-column-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .expertise-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, auto);
+            }
+            
+            .column-image {
+                height: 300px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .expertise-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> +8801707078530 / +8801707078531</span>
+                        <span><i class="fas fa-envelope"></i> skinhairbd@gmail.com</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <h1>Skin&Hair By Dr. Matiur</h1>
+                        </a>
+                    </div>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="../index.html#services">Treatments <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="botox.html">BOTOX® Injections</a></li>
+                                <li><a href="dermal-fillers.html">Dermal Fillers</a></li>
+                                <li><a href="lip-enhancement.html">Lip Enhancement</a></li>
+                                <li><a href="microneedling.html">Micro-Needling</a></li>
+                                <li><a href="chemical-peels.html">Chemical Peels</a></li>
+                                <li><a href="acne-treatment.html">Acne Treatment</a></li>
+                                <li><a href="hair-treatment.html">Hair Treatment</a></li>
+                                <li><a href="tattoo-removal.html">Tattoo Removal</a></li>
+                                <li><a href="hyperpigmentation.html">Hyperpigmentation</a></li>
+                                <li><a href="mesotherapy.html">Mesotherapy</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="consultation.html">Consultation</a></li>
+                        <li><a href="about.html" class="active">About Dr. Matiur</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html#booking" class="btn-appointment">Book Appointment</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Dr. Matiur Rahman Chowdhury</h1>
+            <p>Bangladesh's Most Experienced Aesthetic Dermatologist</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="treatment-content">
+        <div class="container">
+            <div class="two-column-grid">
+                <div class="column-image">
+                    <img src="../images/location.jpg" alt="Dr. Matiur Rahman Chowdhury - Aesthetic Dermatologist">
+                </div>
+                
+                <div class="column-text">
+                    <h2>About Dr. Matiur Rahman Chowdhury</h2>
+                    <p>Dr Matiur Rahman Chowdhury is the most experienced and highly skilled Clinical - Aesthetic Dermatologist of Bangladesh. He is one of those very few doctors who started concept of Aesthetic Dermatology in Bangladesh.</p>
+                    <p>He received comprehensive training on aesthetic procedures from world-renowned trainers across different countries. Dr. Chowdhury also developed his own exclusive combination treatments to tackle difficult dermatological issues including acne & acne scar reduction, stretch marks, melasma, dark circles, tired eyes, hair loss and the challenging jaw/neck area.</p>
+                    <p>As a fully qualified doctor with additional specialized qualifications in aesthetic dermatology from international institutions, Dr. Chowdhury possesses vast knowledge and extensive experience in various aesthetic and anti-aging treatments and procedures.</p>
+                </div>
+            </div>
+
+            <!-- Expertise & Training Section -->
+            <section class="why-choose-section" style="margin: 80px 0;">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Expertise & Training</h2>
+                        <div class="title-divider"></div>
+                        <p class="section-subtitle">International qualifications and pioneering experience in aesthetic dermatology</p>
+                    </div>
+                    
+                    <div class="expertise-grid">
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>International Training</h3>
+                            <p>Received training on aesthetic procedures from world-renowned trainers across different countries, bringing global expertise to Bangladesh.</p>
+                        </div>
+                        
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Pioneering Role</h3>
+                            <p>One of the very first doctors to introduce the concept of Aesthetic Dermatology in Bangladesh, setting new standards in the field.</p>
+                        </div>
+                        
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Dual Expertise</h3>
+                            <p>Highly skilled in both clinical and aesthetic dermatology with extensive experience in diagnostic and treatment procedures.</p>
+                        </div>
+                        
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3>Anti-Aging Specialist</h3>
+                            <p>Vast knowledge and experience in aesthetic and anti-aging treatments, specializing in natural-looking rejuvenation.</p>
+                        </div>
+                        
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Innovative Solutions</h3>
+                            <p>Developer of exclusive combination treatments for challenging conditions like acne scars, melasma, and hair loss.</p>
+                        </div>
+                        
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>Additional Qualifications</h3>
+                            <p>Fully qualified doctor with specialized certifications in aesthetic dermatology from international institutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What We Do Section  -->
+            <div class="two-column-grid reverse">
+                <div class="column-image">
+                    <img src="../images/location.jpg" alt="Skin&Hair Clinic Interior - Modern Treatment Facility">
+                </div>
+                
+                <div class="column-text">
+                    <h2>What We Do</h2>
+                    <p><b>Skin&Hair By Dr. Matiur</b> represents a revolutionary concept in dermatological care. While seemingly simple, our approach fundamentally transforms the patient experience.</p>
+                    <p>Drawing from his extensive experience as both a clinical and aesthetic dermatologist, Dr. Matiur Rahman Chowdhury recognized that many patients sought more comprehensive care beyond traditional treatments. They desired a holistic approach that eliminated the need to research the latest techniques or search for qualified practitioners across multiple clinics.</p>
+                    <p>In response to this need, Dr. Chowdhury has assembled a unique team of professional specialists to offer patients a comprehensive range of skin and hair healthcare services under one roof. We provide treatment for all skin and hair diseases, combining medical excellence with aesthetic precision.</p>
+                </div>
+            </div>
+
+            <!-- Holistic Approach Section -->
+            <div class="two-column-grid">
+                <div class="column-image">
+                    <img src="../images/location.jpg" alt="Holistic Dermatology Approach - Comprehensive Care">
+                </div>
+                
+                <div class="column-text">
+                    <h2>Our Holistic Approach</h2>
+                    <p><b>Skin&Hair By Dr. Matiur</b> embraces a comprehensive, holistic philosophy toward skin and hair care, obesity management, and body shaping. We look beyond immediate symptoms to understand and treat each patient as a complete individual.</p>
+                    <p>Dr. Matiur Rahman Chowdhury has curated a distinctive team of professionals who collaborate to provide patients with an extensive range of skin and hair care services. This integrated approach ensures continuity of care and optimal treatment outcomes.</p>
+                    <p>All our services utilize state-of-the-art technology suitable for diverse skin types. Our experienced medical staff operates under direct medical supervision, guaranteeing the highest standards of safety, comfort, and consistently superior results for every patient.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Comprehensive Treatment Options</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                <div class="faq-item">
+                    <h4>Clinical Treatments</h4>
+                    <p>All types of clinical dermato surgical procedures using the latest technology and techniques.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Aesthetic Procedures</h4>
+                    <p>Chemical peels, laser treatments, PRP/GFC/Exosome/PDRN, anti-ageing injections, and dermal fillers.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Advanced Treatments</h4>
+                    <p>Collagen stimulating PDO-PLLA-PCL threads, mesotherapy, face and body contouring.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Exclusive Combinations</h4>
+                    <p>Custom combination treatments for acne scars, stretch marks, melasma, dark circles, and hair loss.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Features Section -->
+    <section class="treatment-content">
+        <div class="container">
+            <div class="two-column-grid reverse">
+                <div class="column-image">
+                    <img src="../images/location.jpg" alt="Skin&Hair Clinic Location - Panthapath, Dhaka">
+                </div>
+                
+                <div class="column-text">
+                    <h2>Our Clinic</h2>
+                    <p><b>Skin&Hair By Dr. Matiur</b> is an exclusive center for skin and hair treatment, including obesity management for both men and women. Strategically located in the heart of Dhaka City, our clinic offers convenient access for patients throughout the metropolitan area.</p>
+                    <p>We provide a peaceful, tranquil environment for consultations and treatments, with our discreet location ensuring complete privacy for those who value confidentiality. The clinic features beautiful, luxurious furnishings complemented by the latest medical equipment.</p>
+                    <p>Situated on the 2nd floor with easy accessibility, our Panthapath location provides convenient access from Dhanmondi, Gulshan, Bashundhara, Uttara, and other major areas of Dhaka City. We regularly welcome patients from across Bangladesh and have special arrangements for our international patients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Experience Expert Care</h2>
+                <p>Book your consultation with Dr. Matiur Rahman Chowdhury today</p>
+                <a href="consultation.html" class="btn btn-light">Book Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Skin&Hair By Dr. Matiur</h3>
+                    <p>Expert aesthetic and clinical dermatology services in the heart of Dhaka.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Dr. Matiur</a></li>
+                        <li><a href="consultation.html">Consultation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Popular Treatments</h3>
+                    <ul>
+                        <li><a href="botox.html">BOTOX® Injections</a></li>
+                        <li><a href="dermal-fillers.html">Dermal Fillers</a></li>
+                        <li><a href="acne-treatment.html">Acne Treatment</a></li>
+                        <li><a href="hair-treatment.html">Hair Treatment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> 57/15, West Panthapath, Dhaka 1215</li>
+                        <li><i class="fas fa-phone"></i> +8801707078530 / +8801707078531</li>
+                        <li><i class="fas fa-envelope"></i> skinhairbd@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Skin&Hair By Dr. Matiur. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
