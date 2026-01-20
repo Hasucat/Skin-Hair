@@ -68,32 +68,35 @@
     </header>
 
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
+    <section class="page-header" style="text-align:center;">
+        <div class="container" style="max-width: 800px;">
             <h1>Your Private Consultation</h1>
-            <p>A comprehensive approach to your skin and hair care needs</p>
+            <p style="margin-top:15px;">A comprehensive approach to your skin and hair care needs</p>
         </div>
     </section>
 
     <!-- Consultation Content -->
     <section class="treatment-content">
-        <div class="container">
+        <div class="container" style="max-width: 900px;">
+
             <div class="content-section">
                 <h2>Why Consultation is Essential</h2>
                 <p>A full consultation with Dr. Matiur Rahman Chowdhury is essential prior to any treatments taking place.</p>
-                
                 <p>For an effective treatment plan to deliver the best possible results, we ensure that we fully understand the condition that needs to be treated. Sometimes there are underlying factors which must be fully appreciated and treated in order to get a good outcome for the patient.</p>
             </div>
 
             <div class="info-box">
-                <h3>What to Expect</h3>
-                <p>This thorough consultation will include:</p>
-                <ul>
-                    <li>Comprehensive discussion to ensure we fully understand your skincare concerns</li>
-                    <li>Pertinent medical history and treatment history</li>
-                    <li>Review of your daily lifestyle, work, relaxation, diet and hydration</li>
-                    <li>Discussion about the most appropriate treatment plan together with a quotation</li>
-                </ul>
+                <h3>What to Expect During Your Consultation</h3>
+
+                <div style="display:grid; gap:18px; margin-top:15px;">
+                    <p><strong>✔ Detailed Discussion:</strong> A comprehensive conversation to fully understand your skin or hair concerns and expectations.</p>
+
+                    <p><strong>✔ Medical & Treatment History:</strong> Review of relevant medical background and any previous treatments undertaken.</p>
+
+                    <p><strong>✔ Lifestyle Assessment:</strong> Evaluation of daily routine including work, stress, diet, hydration, and relaxation habits.</p>
+
+                    <p><strong>✔ Treatment Plan & Quotation:</strong> Clear explanation of suitable treatment options along with pricing and next steps.</p>
+                </div>
             </div>
 
             <div class="content-section">
@@ -109,104 +112,117 @@
             <div class="content-section">
                 <h2>Consultation Location</h2>
                 <p>Your consultation will take place at our Panthapath Center.</p>
-                
                 <p>We offer a totally private and confidential service at our center, so nobody need know you've been if you don't want them to. We work with high profile clients and understand the need for discretion.</p>
             </div>
+
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact & Booking -->
     <section class="faq-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact Us to Arrange an Appointment</h2>
+
+            <div class="section-header" style="text-align:center; max-width:700px; margin:auto;">
+                <h2 class="section-title">Arrange Your Appointment</h2>
                 <div class="title-divider"></div>
-                <p class="section-subtitle">Please contact us to schedule your private consultation</p>
+                <p class="section-subtitle">Contact us to schedule your private consultation</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start;">
+            <div style="display:grid; grid-template-columns: 1.1fr 0.9fr; gap:60px; align-items:start; margin-top:50px;">
+
+                <!-- FORM -->
                 <div class="contact-form">
                     <form id="consultationForm">
                         <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
+                            <label>Full Name *</label>
+                            <input type="text" required>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
+                            <label>Email Address *</label>
+                            <input type="email" required>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <label>Phone Number *</label>
+                            <input type="tel" required>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="treatment">Treatment of Interest</label>
-                            <select id="treatment" name="treatment">
+                            <label>Treatment of Interest</label>
+                            <select>
                                 <option value="">Select a treatment</option>
-                                <option value="botox">BOTOX® Injections</option>
-                                <option value="fillers">Dermal Fillers</option>
-                                <option value="lip">Lip Enhancement</option>
-                                <option value="microneedling">Micro-Needling</option>
-                                <option value="peels">Chemical Peels</option>
-                                <option value="acne">Acne Treatment</option>
-                                <option value="hair">Hair Treatment</option>
-                                <option value="tattoo">Tattoo Removal</option>
-                                <option value="pigmentation">Hyperpigmentation</option>
-                                <option value="meso">Mesotherapy</option>
-                                <option value="other">Other</option>
+                                <option>BOTOX® Injections</option>
+                                <option>Dermal Fillers</option>
+                                <option>Lip Enhancement</option>
+                                <option>Micro-Needling</option>
+                                <option>Chemical Peels</option>
+                                <option>Acne Treatment</option>
+                                <option>Hair Treatment</option>
+                                <option>Tattoo Removal</option>
+                                <option>Hyperpigmentation</option>
+                                <option>Mesotherapy</option>
+                                <option>Other</option>
                             </select>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" rows="5"></textarea>
+                            <label>Your Message</label>
+                            <textarea rows="5"></textarea>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="date">Preferred Date</label>
-                            <input type="date" id="date" name="date">
+                            <label>Preferred Date</label>
+                            <input type="date">
                         </div>
-                        
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Consultation</button>
+
+                        <button class="btn btn-primary" style="width:100%; margin-top:10px;">
+                            Request Consultation
+                        </button>
                     </form>
                 </div>
 
-                <div>
-                    <div class="info-box" style="margin-top: 0;">
-                        <h3><i class="fas fa-phone"></i> Call Us</h3>
-                        <p style="font-size: 20px; color: var(--primary-color); font-weight: 600;">+8801707078530<br>+8801707078531</p>
+                <!-- CONTACT INFO -->
+                <div style="display:grid; gap:30px;">
+                    <div class="info-box">
+                        <h3><i class="fas fa-phone"></i> Call</h3>
+                        <p style="font-size:20px; font-weight:600; margin-top:10px;">
+                            +8801707078530<br>
+                            +8801707078531
+                        </p>
                     </div>
 
                     <div class="info-box">
-                        <h3><i class="fas fa-envelope"></i> Email Us</h3>
-                        <p style="font-size: 18px; color: var(--primary-color); font-weight: 600;">skinhairbd@gmail.com</p>
+                        <h3><i class="fas fa-envelope"></i> Email</h3>
+                        <p style="font-size:18px; font-weight:600; margin-top:10px;">
+                            skinhairbd@gmail.com
+                        </p>
                     </div>
 
                     <div class="info-box">
-                        <h3><i class="fas fa-clock"></i> Clinic Hours</h3>
-                        <p>Please call to confirm current operating hours and available appointment times.</p>
-                    </div>
+                        <h3><i class="fas fa-map-marker-alt"></i> Visit</h3>
+                        <p style="margin-top:10px;">
+                            <strong>Skin&Hair By Dr. Matiur</strong><br>
+                            57/15, West Panthapath<br>
+                            Dhaka 1215
+                        </p>
 
-                    <div class="info-box">
-                        <h3><i class="fas fa-map-marker-alt"></i> Visit Us</h3>
-                        <p>"Skin&Hair By Dr. Matiur"<br>
-                        57/15, West Panthapath<br>
-                        (Near Panthapath Signal)<br>
-                        Dhaka 1215, Bangladesh</p>
-                        <a href="https://maps.google.com" target="_blank" class="btn btn-secondary" style="margin-top: 15px;">Get Directions</a>
+                        <a href="https://maps.google.com" 
+                        target="_blank"
+                        class="btn btn-secondary"
+                        style="margin-top:15px; display:inline-block;">
+                        Get Directions
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Privacy Note -->
-    <section class="treatment-content" style="padding-top: 0; padding-bottom: 60px;">
-        <div class="container">
-            <div class="info-box" style="background: linear-gradient(135deg, rgba(44, 122, 123, 0.1) 0%, rgba(56, 178, 172, 0.1) 100%);">
+    <!-- Privacy -->
+    <section class="treatment-content" style="padding-top:0;">
+        <div class="container" style="max-width:800px;">
+            <div class="info-box">
                 <h3><i class="fas fa-lock"></i> Your Privacy Matters</h3>
                 <p>We offer a totally private and confidential service at our center, so nobody need know you've been if you don't want them to. We work with high profile clients and understand the need for discretion.</p>
             </div>
@@ -251,7 +267,7 @@
                     <h3>Contact Info</h3>
                     <ul class="contact-list">
                         <li><i class="fas fa-map-marker-alt"></i> 57/15, West Panthapath, Dhaka 1215</li>
-                        <li><i class="fas fa-phone"></i> +8801707078530 / +8801707078531</li>
+                        <li><i class="fas fa-phone"></i> +8801707078530  +8801707078531</li>
                         <li><i class="fas fa-envelope"></i> skinhairbd@gmail.com</li>
                     </ul>
                 </div>
